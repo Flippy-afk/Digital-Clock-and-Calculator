@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background: url("./yeji.png");
+  padding: 0;
+  margin; 0;
+
+
+}
+
+.main{
+  background: #ddd;
+  width: 350px;
+  margin: 0 ;
+  left: 70%;
+  top: 20px;
+  height: 120px;
+  position: relative;
+  padding: 30px;
+}
+
+.badge{
+  background: #ADD8E6;
+  width: 60px;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  left: 40%;
+
+}
+
+.clock{
+  background: #EBEBEB;
+  text-align: center;
+  font-size: 45px;
+  height: 100%;
+  padding-top: 7px;
+  position: relative;
+  font-family: Orbitron
+}
+.calc{
+  display: grid;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4,100px);
+  grid-template-rows: minmax(120, auto) repeat(5,100px);
+
+}
+.ulator{
+  background: #DAA520;
+  width: 100px;
+  color: white;
+  padding: 5px 200px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+.calc > button {
+  cursor: pointer;
+  font-size: 30px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+
+}
+.calc > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
